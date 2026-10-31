@@ -82,5 +82,3 @@ backend/app/db/*.sqlite3
 Thumbs.db
 Desktop.ini
 
-# --- Temporary Output Files ---
-project_plan.html
