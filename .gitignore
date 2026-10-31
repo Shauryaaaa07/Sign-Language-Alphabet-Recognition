@@ -1,0 +1,86 @@
+# ==============================================================================
+# Git Ignore Configuration
+# Project: AI-Based Indian Sign Language Alphabet Recognition & Voice Conversion
+# ==============================================================================
+
+# --- Python & Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Node / Frontend Dependencies & Bundles ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Large Datasets & Archives (Strict Exclusions) ---
+dataset/raw/*
+dataset/custom/*
+dataset/processed/*
+!dataset/raw/.gitkeep
+!dataset/custom/.gitkeep
+!dataset/processed/.gitkeep
+!dataset/dataset_info.md
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# --- Heavy ML Model Weights & Checkpoints ---
+# (Only versioned lightweight configs like label_classes.json are tracked)
+saved_models/*.keras
+saved_models/*.h5
+saved_models/*.pb
+saved_models/variables/
+!saved_models/.gitkeep
+!saved_models/label_classes.json
+
+# --- SQLite Databases ---
+*.db
+*.sqlite3
+backend/app/db/*.sqlite3
+
+# --- Environment Variables & Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- IDE & OS Cache ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Temporary Output Files ---
+project_plan.html

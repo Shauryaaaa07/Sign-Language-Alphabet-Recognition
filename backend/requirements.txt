@@ -1,0 +1,11 @@
+# Backend Dependencies for FastAPI Inference Service
+# Python compatibility: Python 3.10 - 3.11 recommended for TensorFlow & OpenCV stability
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+python-multipart>=0.0.9
+opencv-python>=4.9.0.80
+numpy>=1.26.0,<2.0.0
+pillow>=10.0.0
+pydantic>=2.6.0
+tensorflow>=2.15.0
