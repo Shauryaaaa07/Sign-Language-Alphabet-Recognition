@@ -1,0 +1,13 @@
+{
+  "classes": [
+    "STATIC_HOLD",
+    "DYNAMIC_J",
+    "DYNAMIC_Z"
+  ],
+  "sequence_length": 30,
+  "feature_dim": 78,
+  "bilstm_val_accuracy": 0.5111111402511597,
+  "bigru_val_accuracy": 0.5333333611488342,
+  "status": "architectural_verification_complete",
+  "notice": "RealSign dataset contains static images. Full dynamic training pending physical video collection for J and Z."
+}

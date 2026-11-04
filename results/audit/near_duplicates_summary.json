@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-11-03T04:49:55.630004+00:00",
+  "hamming_distance_threshold": 2,
+  "classes_audited": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "H",
+    "L",
+    "R"
+  ],
+  "total_test_images_analyzed": 1584,
+  "total_near_duplicates_found": 1131,
+  "overall_leakage_rate_pct": 71.4,
+  "audit_duration_seconds": 16.08,
+  "per_class_statistics": {
+    "A": {
+      "train_samples": 700,
+      "test_samples": 200,
+      "flagged_near_duplicates": 132,
+      "leakage_rate_pct": 66.0
+    },
+    "B": {
+      "train_samples": 700,
+      "test_samples": 199,
+      "flagged_near_duplicates": 169,
+      "leakage_rate_pct": 84.92
+    },
+    "C": {
+      "train_samples": 700,
+      "test_samples": 200,
+      "flagged_near_duplicates": 140,
+      "leakage_rate_pct": 70.0
+    },
+    "D": {
+      "train_samples": 694,
+      "test_samples": 190,
+      "flagged_near_duplicates": 152,
+      "leakage_rate_pct": 80.0
+    },
+    "E": {
+      "train_samples": 650,
+      "test_samples": 199,
+      "flagged_near_duplicates": 90,
+      "leakage_rate_pct": 45.23
+    },
+    "H": {
+      "train_samples": 648,
+      "test_samples": 199,
+      "flagged_near_duplicates": 126,
+      "leakage_rate_pct": 63.32
+    },
+    "L": {
+      "train_samples": 700,
+      "test_samples": 200,
+      "flagged_near_duplicates": 157,
+      "leakage_rate_pct": 78.5
+    },
+    "R": {
+      "train_samples": 641,
+      "test_samples": 197,
+      "flagged_near_duplicates": 165,
+      "leakage_rate_pct": 83.76
+    }
+  },
+  "academic_interpretation": "High near-duplicate rates indicate that the test set contains frames captured in the same continuous video sessions or from the same signers as the training split. Consequently, test accuracy scores (e.g. 99.94% on subsets or 86.34% overall) must be reported strictly as in-distribution evaluation on held-out frames, NOT as proof of signer-independent or cross-environment generalization."
+}

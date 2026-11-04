@@ -29,7 +29,12 @@ wheels/
 .installed.cfg
 *.egg
 
-# --- Node / Frontend Dependencies & Bundles ---
+# --- Testing & Coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
 frontend/node_modules/
 frontend/dist/
 frontend/dist-ssr/
@@ -54,9 +59,11 @@ dataset/processed/*
 *.rar
 *.7z
 
-# --- Heavy ML Model Weights & Checkpoints ---
-# (Only versioned lightweight configs like label_classes.json are tracked)
-saved_models/*.keras
+# --- Temporary & Scratch Files ---
+scratch/
+
+# --- ML Model Checkpoints ---
+# (Lightweight trained model weights < 5MB are versioned so the project runs out-of-the-box)
 saved_models/*.h5
 saved_models/*.pb
 saved_models/variables/

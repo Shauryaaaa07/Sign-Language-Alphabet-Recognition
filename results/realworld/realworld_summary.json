@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-11-03T04:57:51.073893+00:00",
+  "model_checkpoint": "isl_alphabet_cnn_v4_best.keras",
+  "sha256": "4616e94b2c42fbca0e11247bf922e7edea96bdbdf44215b1318c35b80a093762",
+  "total_samples": 40,
+  "overall_accuracy": 0.675,
+  "macro_f1": 0.5036,
+  "weighted_f1": 0.7554,
+  "average_latency_ms": 15.51,
+  "background_breakdown": {
+    "blur": {
+      "total": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "avg_confidence": 0.9923
+    },
+    "bright": {
+      "total": 8,
+      "correct": 5,
+      "accuracy": 0.625,
+      "avg_confidence": 0.7157
+    },
+    "dim": {
+      "total": 8,
+      "correct": 1,
+      "accuracy": 0.125,
+      "avg_confidence": 0.7944
+    },
+    "plain": {
+      "total": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "avg_confidence": 0.9869
+    },
+    "shadow": {
+      "total": 8,
+      "correct": 5,
+      "accuracy": 0.625,
+      "avg_confidence": 0.649
+    }
+  },
+  "signer_breakdown": {
+    "alex": {
+      "total": 8,
+      "correct": 5,
+      "accuracy": 0.625,
+      "avg_confidence": 0.7157
+    },
+    "priya": {
+      "total": 16,
+      "correct": 9,
+      "accuracy": 0.5625,
+      "avg_confidence": 0.8934
+    },
+    "shaurya": {
+      "total": 16,
+      "correct": 13,
+      "accuracy": 0.8125,
+      "avg_confidence": 0.818
+    }
+  }
+}
