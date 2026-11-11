@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-03T05:29:30.259891+00:00",
+  "selected_model": "Multi-Layer Perceptron (SignAI_Landmark_MLP)",
+  "model_file": "isl_landmark_mlp_best.keras",
+  "sha256": "cdfbfdd4a9c40af088294f11c70a52c92854f4ef26f36bf034ef2ad062240068",
+  "input_dimension": 78,
+  "num_classes": 26,
+  "training_samples": 1518,
+  "validation_samples": 519,
+  "mlp_results": {
+    "val_accuracy": 0.6917,
+    "val_macro_f1": 0.6377,
+    "val_weighted_f1": 0.639
+  },
+  "random_forest_baseline_results": {
+    "val_accuracy": 0.7765,
+    "val_macro_f1": 0.7244
+  }
+}

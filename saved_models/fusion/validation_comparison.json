@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-03T05:39:23.808333+00:00",
+  "model_name": "SignAI_Multimodal_Fusion",
+  "checkpoint": "isl_multimodal_fusion_best.keras",
+  "sha256": "85bc8ade2939412b33f4547579c2c76b8a637fc909c4579a382734b3d8b3e828",
+  "base_cnn_v4_sha256": "4616e94b2c42fbca0e11247bf922e7edea96bdbdf44215b1318c35b80a093762",
+  "validation_samples": 468,
+  "multimodal_metrics": {
+    "val_accuracy": 0.8632,
+    "val_macro_f1": 0.824,
+    "val_weighted_f1": 0.824
+  },
+  "model_comparison": {
+    "cnn_v4_baseline_val_macro_f1": 0.7768,
+    "landmark_mlp_val_macro_f1": 0.6377,
+    "fusion_model_val_macro_f1": 0.824
+  },
+  "training_duration_seconds": 168.03
+}
