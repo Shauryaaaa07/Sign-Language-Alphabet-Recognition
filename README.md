@@ -14,6 +14,9 @@
 [![Vite 8](https://img.shields.io/badge/Vite-8.3.5-646CFF.svg)](https://vitejs.dev/)
 [![Backend Tests](https://img.shields.io/badge/Backend_Tests-49%2F49_Passed-brightgreen.svg)]()
 [![Frontend Tests](https://img.shields.io/badge/Frontend_Suites-6%2F6_Passed-brightgreen.svg)]()
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?logo=vercel)](https://sign-language-alphabet-recognition-gamma.vercel.app)
+[![API Status](https://img.shields.io/badge/API_Status-Live_on_Render-46E3B7?logo=render)](https://signnai-backend.onrender.com/health)
+[![Swagger Docs](https://img.shields.io/badge/Swagger_Docs-API_Reference-85EA2D?logo=fastapi)](https://signnai-backend.onrender.com/docs)
 
 </div>
 
