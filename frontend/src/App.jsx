@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import "./App.css";
 
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API = (import.meta.env.VITE_API_URL || "http://127.0.0.1:8000").replace(/\/+$/, "");
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const THRESHOLD = 0.75;
 

@@ -33,12 +33,19 @@ IMAGE_CHANNELS = 3
 IMAGE_SIZE = (IMAGE_WIDTH, IMAGE_HEIGHT)
 NUM_CLASSES = 26
 
-# Allowed CORS origins (Vite React frontend dev server)
-CORS_ORIGINS: List[str] = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:3000",
-]
+# Allowed CORS origins (Vite React frontend dev server + production domains)
+_env_cors = os.getenv("CORS_ORIGINS", "")
+if _env_cors:
+    if _env_cors.strip() == "*":
+        CORS_ORIGINS: List[str] = ["*"]
+    else:
+        CORS_ORIGINS: List[str] = [orig.strip() for orig in _env_cors.split(",") if orig.strip()]
+else:
+    CORS_ORIGINS: List[str] = [
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:3000",
+    ]
 
 # API Metadata
 API_TITLE = "Indian Sign Language (ISL) Alphabet Recognition API"

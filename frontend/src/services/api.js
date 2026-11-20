@@ -4,9 +4,10 @@
  * Manages HTTP communication with the FastAPI backend service.
  */
 
-// Configurable base URL; defaults to local development backend
-export const API_BASE_URL =
-  import.meta.env.VITE_API_URL || 'http://localhost:8000';
+// Configurable base URL; defaults to local development backend (strips trailing slashes)
+export const API_BASE_URL = (
+  import.meta.env.VITE_API_URL || 'http://localhost:8000'
+).replace(/\/+$/, '');
 
 /**
  * Checks the runtime health and model loading status of the backend.

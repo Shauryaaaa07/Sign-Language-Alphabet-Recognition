@@ -272,6 +272,7 @@ npm --prefix frontend run build
 | [`docs/SIGN_AI_2_0_MODEL_COMPARISON.md`](docs/SIGN_AI_2_0_MODEL_COMPARISON.md) | Reconciled comparative metrics across all 5 model families |
 | [`docs/SIGN_AI_2_0_DEMO_GUIDE.md`](docs/SIGN_AI_2_0_DEMO_GUIDE.md) | 9-act live presentation script & viva defense Q&A |
 | [`docs/SIGN_AI_2_0_SETUP_GUIDE.md`](docs/SIGN_AI_2_0_SETUP_GUIDE.md) | Step-by-step cold-start environment & verification guide |
+| [`docs/DEPLOYMENT_GUIDE.md`](docs/DEPLOYMENT_GUIDE.md) | Step-by-step Render (FastAPI) + Vercel (React Vite) cloud deployment guide |
 | [`docs/SIGN_AI_2_0_FINAL_CHANGELOG.md`](docs/SIGN_AI_2_0_FINAL_CHANGELOG.md) | Chronological changelog of stabilization & upgrade edits |
 | [`docs/SIGN_AI_2_0_FINAL_READINESS_CHECKLIST.md`](docs/SIGN_AI_2_0_FINAL_READINESS_CHECKLIST.md) | Automated verification vs pending physical hardware testing matrix |
 | [`backend/README.md`](backend/README.md) | Backend service, router API docs & test instructions |

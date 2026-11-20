@@ -64,11 +64,12 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# Configure Cross-Origin Resource Sharing (CORS) for React frontend development
+# Configure Cross-Origin Resource Sharing (CORS) for React frontend development & deployment
+_allow_all_cors = "*" in CORS_ORIGINS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=CORS_ORIGINS,
-    allow_credentials=True,
+    allow_credentials=not _allow_all_cors,
     allow_methods=["*"],
     allow_headers=["*"],
 )

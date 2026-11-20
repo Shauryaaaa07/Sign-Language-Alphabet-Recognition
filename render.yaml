@@ -1,0 +1,17 @@
+# Render Blueprint for SignAI 2.0 FastAPI Inference Backend
+# Documentation: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: signai-backend
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.10
+      - key: CORS_ORIGINS
+        value: "*"

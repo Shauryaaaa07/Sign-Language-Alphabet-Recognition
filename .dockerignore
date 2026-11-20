@@ -1,0 +1,16 @@
+# Docker ignore rules for SignAI 2.0 Backend
+dataset/
+frontend/
+node_modules/
+.git/
+.github/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+scratch/
+docs/
+results/
